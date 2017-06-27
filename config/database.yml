@@ -1,0 +1,22 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: tuanh
+  password: 1234
+  host: localhost
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: framgia-project2_development
+
+test:
+  <<: *default
+  database: framgia-project2_test
+
+production:
+  <<: *default
+  database: framgia-project2_production
+  username: framgia-project2
+  password: <%= ENV['FRAMGIA-PROJECT2_DATABASE_PASSWORD'] %>
