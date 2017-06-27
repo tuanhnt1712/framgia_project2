@@ -1,9 +1,19 @@
 /.bundle
+/.framgia-ci-reports/*
 
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
+.drone.yml
+.framgia-ci.yml
+.framgia-ci-result.temp.yml
+.eslintrc.json
 /config/database.yml
+/config/secrets.yml
 .byebug_history
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml
