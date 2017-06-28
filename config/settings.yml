@@ -1,0 +1,6 @@
+user:
+  maximum_name: 50
+tag:
+  maximum_name: 100
+post:
+  maximum_title: 255
