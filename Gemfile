@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem "bootstrap-sass", "3.3.7"
 gem "coffee-rails", "~> 4.2"
 gem "config", "1.2.1"
 gem "devise"
@@ -35,6 +36,7 @@ group :development, :test do
   gem "reek"
   gem "rspec-rails"
   gem "rspec-collection_matchers"
+  gem "rspec-html-matchers"
   gem "rubocop", "~> 0.35.0", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "scss_lint", require: false
