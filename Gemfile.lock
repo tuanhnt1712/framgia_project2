@@ -56,6 +56,9 @@ GEM
       erubis (>= 2.6.6)
       rack (>= 0.9.0)
     bindex (0.5.0)
+    bootstrap-sass (3.3.7)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
     brakeman (3.6.2)
     builder (3.2.3)
     bundler-audit (0.5.0)
@@ -238,6 +241,9 @@ GEM
     rspec-expectations (3.6.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
+    rspec-html-matchers (0.9.1)
+      nokogiri (~> 1)
+      rspec (>= 3.0.0.a, < 4)
     rspec-mocks (3.6.0)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
@@ -336,6 +342,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   better_errors
+  bootstrap-sass (= 3.3.7)
   brakeman
   bundler-audit
   byebug
@@ -359,6 +366,7 @@ DEPENDENCIES
   reek
   rspec
   rspec-collection_matchers
+  rspec-html-matchers
   rspec-rails
   rubocop (~> 0.35.0)
   rubocop-checkstyle_formatter
@@ -377,4 +385,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.14.6
+   1.15.1

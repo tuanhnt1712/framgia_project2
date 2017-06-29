@@ -1,4 +1,27 @@
 en:
   layouts:
     application:
-      framgia_project2: "FramgiaProject2"
+      framgia_project2: "Framgia Project2"
+    footer:
+      author: "Project 2 - Tu Anh"
+    header:
+      account: "Account"
+      contact: "Contact"
+      framgia: "Framgia Project2"
+      home: "Home"
+      login: "Login"
+      logout: "Log out"
+      menu: "Menu"
+      posts: "Posts"
+      profile: "Profile"
+      settings: "Settings"
+      signup: "Sign up"
+      tags: "Tags"
+      users: "Users"
+  static_pages:
+    contact:
+      contact_me: "Contact me"
+      quote: "Have questions? I have answers (maybe)."
+    home:
+      quote: "We hope that my page will be useful with you"
+      your_secret: "Your Secret"

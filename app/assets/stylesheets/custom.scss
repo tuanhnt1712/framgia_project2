@@ -1,0 +1,17 @@
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'clean-blog';
+
+.dropdown-menu {
+  border: none;
+  background-color: $gray-light;
+  min-width: 121px;
+}
+
+.banner-home {
+  background-image: url('/assets/banner.jpg');
+}
+
+.banner-contact {
+  background-image: url('/assets/contact.jpg');
+}
