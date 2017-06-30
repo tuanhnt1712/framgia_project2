@@ -13,6 +13,7 @@ gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "mysql2", ">= 0.3.18", "< 0.5"
 gem "puma", "~> 3.0"
+gem "omniauth-facebook"
 gem "rails", "~> 5.0.4"
 gem "sass-rails", "~> 5.0"
 gem "turbolinks", "~> 5"
@@ -20,7 +21,6 @@ gem "uglifier", ">= 1.3.0"
 
 group :development, :test do
   gem "autoprefixer-rails"
-  gem "better_errors"
   gem "bundler-audit"
   gem "brakeman", require: false
   gem "byebug", platform: :mri
