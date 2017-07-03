@@ -8,4 +8,8 @@ class Post < ApplicationRecord
   validates :title, presence: true, length: {maximum: Settings.post.maximum_title}
   validates :content, presence: true
   validates :user, presence: true
+
+  mount_uploader :picture, PictureUploader
+
+  scope :sort_by_updated, ->{order updated_at: :desc}
 end

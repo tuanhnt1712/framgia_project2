@@ -5,6 +5,8 @@ user:
   page_user: 10
 post:
   maximum_title: 255
+  page_post: 10
+  picture_default: "post.jpg"
 tag:
   maximum_name: 50
 avatar_default: "avt_default.jpg"

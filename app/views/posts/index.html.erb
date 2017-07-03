@@ -1,9 +1,9 @@
-<div class="intro-header banner-home">
+<header class="intro-header banner-posts">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="site-heading">
-          <h1><%= t ".your_secret" %></h1>
+          <h1><%= t ".your_life" %></h1>
           <% if user_signed_in? %>
             <%= link_to "create_post", new_post_path,
               class: "create-post btn btn-sm btn-primary" %>
@@ -11,6 +11,17 @@
           <span class="subheading"><%= t ".quote" %></span>
         </div>
       </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <% if @posts.any? %>
+        <ul class="post-preview">
+          <%= render @posts %>
+        </ul>
+      <% end %>
     </div>
   </div>
 </div>

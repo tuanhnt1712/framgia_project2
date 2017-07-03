@@ -42,10 +42,37 @@ en:
       signup: "Sign up"
       tags: "Tags"
       users: "Users"
+  posts:
+    create:
+      create_post: "Create post successfully"
+      failed_create: "Create post failed"
+    destroy:
+      delete_success: "Delete successfully"
+      failed_delete: "Delete failed"
+    index:
+      your_life: "Your life your choice"
+      quote: "Let us tenderly and kindly cherish, therefore, the means of knowledge. Let us dare to read, think, speak, and write."
+    new:
+      create_post: "Create Post"
+      post: "Post"
+      title: "Title"
+      picture: "Picture"
+    post:
+      delete: "Delete"
+      edit: "Edit"
+      on: "on"
+      post_by: "Posted by"
+      sure: "Are you sure"
+    show:
+      on: "on"
+      post_by: "Post by"
+    update:
+      update_success: "Update post successfully"
+      update_failed: "Update post failed"
   static_pages:
     contact:
       contact_me: "Contact me"
       quote: "Have questions? I have answers (maybe)."
     home:
-      quote: "We hope that my page will be useful with you"
+      quote: "One great use of words is to hide our thoughts."
       your_secret: "Your Secret"
