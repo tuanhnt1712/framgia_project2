@@ -1,0 +1,30 @@
+<h2>Create New Post</h2>
+<%= link_to "Click here &raquo;".html_safe,
+    "#myModal", data: {toggle: 'modal'}, class: "button-main", id: "button-contact" %>
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Email Contact Form</h4>
+      </div>
+      <div class="modal-body">
+        <%= simple_form_for @post, remote: true do |f| %>
+          <div class="large-10 large-centered columns">
+            <%= f.text_field :title, placeholder: "title" %>
+          </div>
+          <div class="large-10 large-centered columns">
+            <%= f.input :content, placeholder: "Your post", rows: 5, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control" %>
+          </div>
+          <div class="large-10 large-centered columns">
+            <%= f.text_field :all_tags, placeholder: "Tags separated with comma" %>
+          </div>
+          <div class="modal-footer">
+            <%= f.button :submit, "Send", 'data-disable-with' => "Sending...",  class: "submit-button", id: "modal-send" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

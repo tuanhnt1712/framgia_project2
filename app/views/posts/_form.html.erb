@@ -1,0 +1,28 @@
+<%= simple_form_for @post, remote: true do |f| %>
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:" %>
+      </h2>
+      <ul>
+        <% @post.errors.full_messages.each do |msg| %>
+          <li>
+            <%= msg %>
+          </li>
+          <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="large-10 large-centered columns">
+    <%= f.text_field :title, placeholder: "title" %>
+  </div>
+  <div class="large-10 large-centered columns">
+    <%= f.input :content, placeholder: "Your post", rows: 5, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control" %>
+  </div>
+  <div class="large-10 large-centered columns">
+    <%= f.text_field :all_tags, placeholder: "Tags separated with comma" %>
+  </div>
+  <div class="large-10 large-centered columns">
+    <%= f.submit "Post", class: "button"%>
+  </div>
+<% end %>
