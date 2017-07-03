@@ -68,6 +68,16 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    carrierwave (1.1.0)
+      activemodel (>= 4.0.0)
+      activesupport (>= 4.0.0)
+      mime-types (>= 1.16)
+    ckeditor (4.2.4)
+      cocaine
+      orm_adapter (~> 0.5.0)
+    climate_control (0.2.0)
+    cocaine (0.5.8)
+      climate_control (>= 0.0.3, < 1.0)
     code_analyzer (0.4.7)
       sexp_processor
     codeclimate-engine-rb (0.4.0)
@@ -160,6 +170,7 @@ GEM
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
+    mini_magick (4.7.2)
     mini_portile2 (2.2.0)
     minitest (5.10.2)
     multi_json (1.12.1)
@@ -298,6 +309,9 @@ GEM
     shellany (0.0.1)
     shoulda-matchers (3.1.1)
       activesupport (>= 4.0.0)
+    simple_form (3.5.0)
+      actionpack (> 4, < 5.2)
+      activemodel (> 4, < 5.2)
     simplecov (0.14.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
@@ -363,6 +377,8 @@ DEPENDENCIES
   bundler-audit
   byebug
   capybara (~> 2.13)
+  carrierwave
+  ckeditor (~> 4.1)
   coffee-rails (~> 4.2)
   config (= 1.2.1)
   database_cleaner
@@ -374,6 +390,7 @@ DEPENDENCIES
   jquery-rails
   jshint
   listen (~> 3.0.5)
+  mini_magick
   mysql2 (>= 0.3.18, < 0.5)
   omniauth-facebook
   puma (~> 3.0)
@@ -391,6 +408,7 @@ DEPENDENCIES
   scss_lint
   scss_lint_reporter_checkstyle
   shoulda-matchers
+  simple_form (~> 3.2)
   simplecov
   simplecov-json
   simplecov-rcov

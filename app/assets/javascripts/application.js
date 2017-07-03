@@ -4,3 +4,4 @@
 //= require turbolinks
 //= require_tree .
 //= require clean-blog
+//= require ckeditor/init
