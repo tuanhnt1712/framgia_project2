@@ -2,7 +2,9 @@ user:
   maximum_name: 50
   maximum_email: 255
   minimum_password: 6
+  page_user: 10
 post:
   maximum_title: 255
 tag:
   maximum_name: 50
+avatar_default: "avt_default.jpg"

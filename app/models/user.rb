@@ -16,6 +16,10 @@ class User < ApplicationRecord
 
   validates :name, presence: true, length: {maximum: Settings.user.maximum_name}
 
+  mount_uploader :avatar, AvatarUploader
+
+  scope :sort_by_id, ->{order :id}
+
   class << self
     def from_omniauth auth
       where(provider: auth.provider, uid: auth.uid).first_or_create do |user|

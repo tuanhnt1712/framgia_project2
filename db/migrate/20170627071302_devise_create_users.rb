@@ -9,6 +9,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       t.integer :role, null: false, default: 0
       t.datetime :birthday
       t.string :phone
+      t.string :avatar
 
       ## Recoverable
       t.string   :reset_password_token
