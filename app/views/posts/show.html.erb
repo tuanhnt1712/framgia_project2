@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-heading">
+        <div class="post-heading word-break">
           <h2><%= @post.title %></h2>
           <span class="meta"><%= t ".post_by" %> <%= link_to @post.user.name, "#" %>
             <%= t ".on" %> <%= @post.created_at %></span>
@@ -16,7 +16,15 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <h2 class="section-heading"></h2>
-        <p><%= raw @post.content %></p>
+        <span class="word-break"><%= raw @post.content %></span>
+        <hr>
+        <h2><%= t ".comment" %></h2>
+        <div>
+          <%= render partial: "comments/form_comment" %>
+        </div>
+        <div class="comment-list" id="comment_list">
+          <%= render partial: "comments/comment", collection: @post.comments %>
+        </div>
       </div>
     </div>
   </div>

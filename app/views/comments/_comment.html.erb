@@ -1,0 +1,19 @@
+<div class="input-group comment-user", id="<%= comment.id %>">
+  <span>
+    <%= link_to image_tag(comment.user.avatar, class: "comment-avatar"),
+      comment.user %>
+  </span>
+  <div class="word-break">
+    <p class="comment-name"><%= link_to comment.user.name, comment.user %></p>
+    <p class="comment-title"><%= comment.content %></p>
+  </div>
+  <span class="sub-text">
+    <%= time_ago_in_words comment.created_at %>
+    <% if can? :edit, comment %>
+      <%= link_to t(".edit"), edit_post_comment_path(comment.post, comment),
+        id: "edit_comment" %>
+      <%= link_to t(".delete"), [comment.post, comment],
+        method: :delete, remote: true, data: {confirm: t(".sure")} %>
+    <% end %>
+  </span>
+</div>

@@ -63,8 +63,6 @@ class PostsController < ApplicationController
 
   def load_post
     @post = Post.find_by id: params[:id]
-
-    return if @post
-    render file: "public/404.html", status: :not_found, layout: false
+    load_info @post
   end
 end
