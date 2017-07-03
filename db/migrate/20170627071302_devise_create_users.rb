@@ -7,7 +7,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
 
       t.string :name, null: false
       t.integer :role, null: false, default: 0
-      t.datetime :birthday, null: false
+      t.datetime :birthday
       t.string :phone
 
       ## Recoverable

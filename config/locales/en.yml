@@ -1,4 +1,11 @@
 en:
+  devise:
+    registrations:
+      new:
+        signup: "Sign Up"
+    sessions:
+      new:
+        login: "Log in"
   layouts:
     application:
       framgia_project2: "Framgia Project2"
