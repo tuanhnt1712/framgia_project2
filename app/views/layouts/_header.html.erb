@@ -31,12 +31,13 @@
           </li>
         <% else %>
           <li>
-            <%= link_to t(".signup"), "#signup", "data-toggle" => "modal",
-              "data-target" => "#signup", class: "btn btn-small" %>
+            <%= link_to t(".signup"), "#signup",
+              data: {toggle: "modal", target: "#signup"}, class: "btn btn-small" %>
           </li>
           <li>
-            <%= link_to t(".login"), "#login", "data-toggle" => "modal",
-              "data-target" => "#login", class: "btn btn-small" %>
+            <%= link_to t(".login"), "#login",
+              data: {toggle: "modal", target: "#login"}, class: "btn btn-small" %>
+          </li>
         <% end %>
         </li>
       </ul>

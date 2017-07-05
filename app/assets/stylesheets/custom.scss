@@ -1,12 +1,11 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'variable';
 @import 'clean-blog';
 
-$blue: #0085A1;
-
 .dropdown-menu {
-  border: none;
   background-color: $gray-light;
+  border: 0;
   min-width: 121px;
 }
 
