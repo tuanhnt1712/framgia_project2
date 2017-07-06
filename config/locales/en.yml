@@ -3,6 +3,23 @@ en:
     registrations:
       new:
         signup: "Sign Up"
+      edit:
+        birthday: "Birthday"
+        change_avatar: "Change avatar"
+        characters: "characters minimum"
+        current_password: "Current password"
+        delete_account: "Delete my account"
+        edit_profile: "Edit Profile"
+        email: "Email"
+        leave_blank: "leave blank if you don't want to change it"
+        name: "Name"
+        need_current_password: "we need your current password to confirm your changes"
+        password: "Password"
+        password_confirmation: "Password confirmation"
+        phone: "Phone"
+        sure?: "Are you sure?"
+        unhappy?: "Unhappy?"
+        update: "Update"
     sessions:
       new:
         login: "Log in"

@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(version: 20170703234933) do
     t.integer  "role",                   default: 0,  null: false
     t.datetime "birthday"
     t.string   "phone"
+    t.string   "avatar"
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
