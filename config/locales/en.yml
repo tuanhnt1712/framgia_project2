@@ -49,14 +49,18 @@ en:
     destroy:
       delete_success: "Delete successfully"
       failed_delete: "Delete failed"
+    edit:
+      save: "Change save"
+      update_post: "Update Post"
+    form_post:
+      create_post: "Create Post"
+      title: "Title"
+      picture: "Picture"
     index:
       your_life: "Your life your choice"
       quote: "Let us tenderly and kindly cherish, therefore, the means of knowledge. Let us dare to read, think, speak, and write."
     new:
-      create_post: "Create Post"
       post: "Post"
-      title: "Title"
-      picture: "Picture"
     post:
       delete: "Delete"
       edit: "Edit"
@@ -69,6 +73,10 @@ en:
     update:
       update_success: "Update post successfully"
       update_failed: "Update post failed"
+  shared:
+    error_messages:
+      error: error
+      post: Post
   static_pages:
     contact:
       contact_me: "Contact me"

@@ -7,7 +7,7 @@
       <%= t ".on" %> <%= post.updated_at %>
     </p>
     <span>
-      <% if can? [:update, :destroy], post %>
+      <% if can? :update, post %>
         <%= link_to t(".edit"), edit_post_path(post),
         class: "btn btn-primary button_text" %>
         <%= link_to t(".delete"), post, method: :delete, remote: true,
