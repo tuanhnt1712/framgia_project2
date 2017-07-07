@@ -1,0 +1,40 @@
+<div class="intro-header banner-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading">
+          <h1><%= @title %></h1>
+          <hr class="small">
+          <span class="subheading"><%= t ".quote" %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="main-box-body clearfix">
+        <div class="table-responsive">
+          <table class="table user-list" id="my-users">
+            <thead>
+              <tr id="my-users">
+                <th><%= t(".user") %></th>
+                <th><%= t(".email") %></th>
+                <th><%= t(".phone") %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if @users.any? %>
+                <div><%= render @users %></div>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3">
+      <%= render "profile" %>
+    </div>
+  </div>
+</div>

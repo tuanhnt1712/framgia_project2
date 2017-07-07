@@ -1,6 +1,7 @@
 class CommentsController < ApplicationController
   before_action :load_post
   before_action :load_comment, only: [:update, :destroy]
+  before_action :authenticate_user!, only: [:create, :update, :destroy]
 
   def create
     @comment = @post.comments.build comment_params
