@@ -49,7 +49,14 @@ body {
 }
 
 .yield {
-  padding-top: 100px;
+  background: url('/assets/back.jpg') no-repeat;
+  background-size: cover;
+  padding-top: 60px;
+  color: $white;
+}
+
+.flash {
+  padding-top: 60px;
 }
 
 h1 {
@@ -62,10 +69,18 @@ h1 {
 
 .navbar-custom .navbar-brand {
   color: $blue;
+
+  &:hover {
+    color: $red;
+  }
 }
 
 .navbar-custom .nav li a {
   color: $blue;
+
+  &:hover {
+    color: $red;
+  }
 }
 
 .avatar {

@@ -1,10 +1,15 @@
 class PostsController < ApplicationController
+  before_action :load_post, only: :show
   before_action :authenticate_user!, except: [:index, :show]
   load_and_authorize_resource except: [:index, :show]
 
   def index
     @posts = Post.select(:id, :title, :content, :user_id, :updated_at, :picture)
       .sort_by_updated.page(params[:page]).per Settings.post.page_post
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def new
@@ -54,5 +59,12 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit :title, :content, :picture, :picture_cache, :list_tags
+  end
+
+  def load_post
+    @post = Post.find_by id: params[:id]
+
+    return if @post
+    render file: "public/404.html", status: :not_found, layout: false
   end
 end
