@@ -9,4 +9,5 @@ post:
   picture_default: "post.jpg"
 tag:
   maximum_name: 50
+  page_tag: 10
 avatar_default: "avt_default.jpg"

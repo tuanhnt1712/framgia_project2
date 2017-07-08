@@ -45,7 +45,7 @@ class PostsController < ApplicationController
       respond_to do |format|
         format.html do
           flash[:success] = t ".delete_success"
-          redirect_to :back
+          redirect_to root_url
         end
         format.js
       end

@@ -47,6 +47,7 @@ $(document).ready(function(){
           console.log(error);
         }
       });
+      $('#comment_edit').attr('id', 'comment_submit');
     });
   });
 });

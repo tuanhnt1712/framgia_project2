@@ -38,6 +38,10 @@ class User < ApplicationRecord
     end
   end
 
+  def feed
+    Post.feed_load following_ids, id
+  end
+
   def follow other_user
     following << other_user
   end
