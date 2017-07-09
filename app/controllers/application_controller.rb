@@ -10,6 +10,14 @@ class ApplicationController < ActionController::Base
       keys: [:name, :birthday, :phone, :avatar, :avatar_cache]
   end
 
+  def after_sign_in_path_for resource
+    if resource.admin?
+      admin_root_url
+    else
+      root_url
+    end
+  end
+
   def load_info rerource
     return if rerource
     render file: "public/404.html", status: :not_found, layout: false

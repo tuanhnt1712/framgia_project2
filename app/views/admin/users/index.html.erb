@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="main-box-body clearfix">
+        <div class="table-responsive">
+          <table class="table user-list" id="my-users">
+            <thead>
+              <tr id="my-users">
+                <th><%= t ".user" %></th>
+                <th><%= t ".email" %></th>
+                <th><%= t ".phone" %></th>
+                <th><%= t ".action" %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% if @users.any? %>
+                <div><%= render @users %></div>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="infinite-scrolling">
+  <%= paginate @users %>
+</div>

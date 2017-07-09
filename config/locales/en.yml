@@ -1,4 +1,17 @@
 en:
+  admin:
+    users:
+      destroy:
+        deleted_user: "Delete successfully"
+        failed_delete: "Delete failed"
+      index:
+        action: "Action"
+        email: "Email"
+        phone: "Phone"
+        user: "User"
+      user:
+        delete: "Delete"
+        sure: "Are you sure?"
   comments:
     comment:
       delete: "Delete"
@@ -107,6 +120,15 @@ en:
     error_messages:
       error: error
       post: Post
+    header_admin:
+      account: "Account"
+    menu_admin:
+      dashboard: "Dashboard"
+      framgia_project2: "Framgia Project2"
+      notifications: "Notifications"
+      posts: "Posts"
+      tag: "Tag"
+      user: "User"
   static_pages:
     contact:
       contact_me: "Contact me"
