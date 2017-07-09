@@ -24,6 +24,17 @@ en:
       new:
         login: "Log in"
   layouts:
+    admin:
+      account: "Account"
+      dashboard: "Dashboard"
+      framgia_project2: "Framgia Project2"
+      logout: "Log out"
+      notifications: "Notifications"
+      posts: "Post"
+      profile: "Profile"
+      settings: "Settings"
+      tags: "Tags"
+      users: "Users"
     application:
       framgia_project2: "Framgia Project2"
     footer:
