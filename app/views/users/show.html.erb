@@ -1,0 +1,25 @@
+<div class="intro-header banner-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading">
+          <h1><%= t ".your_secret" %></h1>
+          <hr class="small">
+          <span class="subheading"><%= t ".quote" %></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-7 col-lg-offset-2">
+    <% if @user.posts.any? %>
+        <ul class="post-preview" id="my-posts">
+          <%= render @user.posts %>
+        </ul>
+      <% end %>
+  </div>
+  <div class="col-lg-3">
+    <%= render "profile" %>
+  </div>
+</div>

@@ -107,3 +107,23 @@ en:
     home:
       quote: "One great use of words is to hide our thoughts."
       your_secret: "Your Secret"
+  users:
+    index:
+      delete: "Delete"
+      email: "Email"
+      phone: "Phone"
+      sure: "Are you sure"
+      user: "User"
+    show:
+      quote: "One great use of words is to hide our thoughts."
+      your_secret: "Your Profile"
+    follow:
+      follow: "Follow"
+    following:
+      following: "Following"
+    followers:
+      followers: "Followers"
+    show_follow:
+      quote: "One great use of words is to hide our thoughts."
+    unfollow:
+      unfollow: "Unfollow"
