@@ -4,3 +4,6 @@
 //= require turbolinks
 //= require clean-blog
 //= require ckeditor/init
+//= require comment.js
+//= require flash.js
+//= require pagination.js

@@ -97,6 +97,32 @@ h1 {
   color: $gray;
   font-size: 18px;
   font-style: italic;
+  margin-top: 0;
+}
+
+.button_text {
+  border-radius: .25rem;
+  border: 1px solid transparent;
+  display: inline-block;
+  font-size: .875rem;
+  font-weight: 400px;
+  line-height: 1.25;
+  padding: .5rem 1rem;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 60px;
+}
+
+.create-post {
+  border-radius: .25rem;
+}
+
+.post-meta {
+  color: $gray;
+  font: 18px italic;
   margin: 0 0 10px;
 }
 
@@ -125,4 +151,45 @@ h1 {
   a {
     color: $blue;
   }
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.comment-user {
+  position: relative;
+
+  .sub-text {
+    color: $gray-light;
+    display: block;
+    font-family: verdana;
+    font-size: 11px;
+    margin-left: 70px;
+  }
+
+  .comment-avatar {
+    margin-top: 20px;
+    position: absolute;
+    width: 60px;
+  }
+
+  .comment-name {
+    color: $blue;
+    font-size: 20px;
+    margin: 15px 0 0 70px;
+
+    a {
+      color: $blue;
+    }
+  }
+
+  .comment-title {
+    font-size: 20px;
+    margin: 0 70px;
+  }
+}
+
+#infinite-scrolling {
+  text-align: center;
 }

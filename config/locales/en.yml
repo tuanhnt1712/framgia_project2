@@ -1,4 +1,15 @@
 en:
+  comments:
+    comment:
+      delete: "Delete"
+      edit: "Edit"
+      sure: "Are you sure?"
+    destroy:
+      delete_success: "Delete successfully"
+      failed_delete: "Delete failed"
+    form_comment:
+      comment: "Comment"
+      write_comment: "write comment"
   devise:
     registrations:
       new:
@@ -75,10 +86,11 @@ en:
     post:
       delete: "Delete"
       edit: "Edit"
-      on: "on"
+      on_at: "on at"
       post_by: "Posted by"
       sure: "Are you sure"
     show:
+      comment: "Comment"
       on: "on"
       post_by: "Post by"
     update:
