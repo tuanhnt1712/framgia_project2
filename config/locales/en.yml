@@ -78,6 +78,7 @@ en:
       create_post: "Create Post"
       title: "Title"
       picture: "Picture"
+      tags: "Tags"
     index:
       your_life: "Your life your choice"
       quote: "Let us tenderly and kindly cherish, therefore, the means of knowledge. Let us dare to read, think, speak, and write."
@@ -91,8 +92,14 @@ en:
       sure: "Are you sure"
     show:
       comment: "Comment"
-      on: "on"
+      delete: "Delete"
+      edit: "Edit"
+      followers: "Followers"
+      following: "Following"
+      on_at: "on at"
       post_by: "Post by"
+      tags: Tags
+      sure: "Are you sure"
     update:
       update_success: "Update post successfully"
       update_failed: "Update post failed"
@@ -123,6 +130,10 @@ en:
       following: "Following"
     followers:
       followers: "Followers"
+    profile:
+      edit: "Edit"
+      followers: "Followers"
+      following: "Following"
     show_follow:
       quote: "One great use of words is to hide our thoughts."
     unfollow:

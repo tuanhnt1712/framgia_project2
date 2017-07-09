@@ -12,4 +12,16 @@ class Post < ApplicationRecord
   mount_uploader :picture, PictureUploader
 
   scope :sort_by_updated, ->{order updated_at: :desc}
+  scope :feed_load, lambda{|x,y|
+    where("user_id IN (?) OR user_id = ?", x, y)}
+
+  def list_tags= names
+    self.tags = names.split(",").map do |name|
+      Tag.where(name: name.strip).first_or_create!
+    end
+  end
+
+  def list_tags
+    self.tags.map(&:name).join(", ")
+  end
 end
