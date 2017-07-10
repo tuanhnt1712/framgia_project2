@@ -7,3 +7,4 @@
 //= require comment.js
 //= require flash.js
 //= require pagination.js
+//= require social-share-button

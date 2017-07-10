@@ -57,7 +57,7 @@
         <div class="user-info-row">
           <% if current_user == @post.user %>
             <%= link_to t(".edit"), edit_user_registration_path(@post.user),
-              class: "btn btn-primary" %>
+              class: "btn btn-primary button_text" %>
           <% end %>
         </div>
         <div class="sidebar">
@@ -66,6 +66,7 @@
           <%= link_to t(".followers"), followers_user_path(@post.user) %>
           <strong id="followers"><%= @post.user.followers.size %></strong>
         </div>
+        <div><%= social_share_button_tag @post.title, url: request.original_url %></div>
       </div>
     </div>
   </div>

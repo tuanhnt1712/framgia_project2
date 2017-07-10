@@ -11,9 +11,10 @@
         </span>
       <% end %>
     </h2>
-    <p class="post-meta"><%= t ".post_by" %> <%= post.user.name %>
-      <%= t ".on_at" %> <%= post.updated_at %>
+    <p class="post-meta"><%= post.updated_at.strftime("%B %d, %Y") %>
+      <span class="glyphicon glyphicon-comment"></span><%= post.comments.size %>
     </p>
+    <%= social_share_button_tag post.title, url: request.original_url %>
     <span>
       <% if can? :destroy, post %>
         <%= link_to t(".delete"), admin_post_path(post), method: :delete, remote: true,

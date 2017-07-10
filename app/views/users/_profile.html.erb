@@ -10,7 +10,7 @@
 <div class="user-info-row">
   <% if current_user == @user %>
     <%= link_to t(".edit"), edit_user_registration_path(@user),
-      class: "btn btn-primary" %>
+      class: "btn btn-primary button_text" %>
   <% end %>
   <% if user_signed_in? %>
     <%= render "follow_form" %>
