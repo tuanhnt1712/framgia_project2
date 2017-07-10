@@ -10,8 +10,6 @@
 .framgia-ci.yml
 .framgia-ci-result.temp.yml
 .eslintrc.json
-/config/database.yml
-/config/secrets.yml
 .byebug_history
 
 config/settings.local.yml
