@@ -9,6 +9,13 @@ Rails.application.routes.draw do
   resources :posts do
     resources :comments
   end
+
+  namespace :admin do
+    root "users#index"
+    resources :users, only: [:index, :destroy]
+    resources :posts, only: [:index, :destroy]
+  end
+
   resources :users, only: [:index, :show] do
     member do
       get :following, :followers

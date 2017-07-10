@@ -5,7 +5,7 @@ class Ability
     user ||= User.new
     can :read, :all
     if user.admin?
-      can :manage, Post
+      can :manage, [Post, Comment]
       can :destroy, User
     else
       can :create, [Post, Comment]
