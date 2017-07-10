@@ -2,6 +2,7 @@
 @import 'bootstrap';
 @import 'variable';
 @import 'clean-blog';
+@import 'social-share-button';
 
 body {
   a:link {
@@ -29,6 +30,7 @@ body {
 
 .post-title {
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  font-weight: 100;
   margin: 0;
 }
 
@@ -270,4 +272,8 @@ h1 {
 
 .badge {
   background-color: $green;
+}
+
+.glyphicon-comment {
+  padding-left: 5px;
 }
