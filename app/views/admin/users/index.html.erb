@@ -3,12 +3,17 @@
     <div class="col-lg-9">
       <div class="main-box-body clearfix">
         <div class="table-responsive">
+        <p>
+          <%= t ".download" %>:
+          <%= link_to t(".csv"), admin_users_path(format: "csv") %> |
+          <%= link_to t(".excel"), admin_users_path(format: "xls") %>
+        </p>
           <table class="table user-list" id="my-users">
             <thead>
               <tr id="my-users">
-                <th><%= t ".user" %></th>
+                <th><%= t ".user"%>(<%= @users.total_count %>)</th>
                 <th><%= t ".email" %></th>
-                <th><%= t ".phone" %></th>
+                <th><%= t ".posts" %></th>
                 <th><%= t ".action" %></th>
               </tr>
             </thead>
