@@ -5,8 +5,8 @@
     </span>
     <p>
       <%= t ".download" %>:
-      <%= link_to t(".csv"), admin_posts_path(format: "csv") %> |
-      <%= link_to t(".excel"), admin_posts_path(format: "xls") %>
+      <%= link_to t(".csv"), admin_posts_path(format: "csv", query: @posts) %> |
+      <%= link_to t(".excel"), admin_posts_path(format: "xls", query: @posts) %>
     </p>
     <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1">
       <% if @posts.any? %>

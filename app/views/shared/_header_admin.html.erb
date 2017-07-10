@@ -26,13 +26,10 @@
            </a>
         </li>
         <li>
-          <a href="">
-            <form action="#" method="get">
-              <input type="text" name="q">
-              <i class="fa fa-search"></i>
-            </form>
-            <span class="hidden-lg hidden-md"><%= t ".search" %></span>
-          </a>
+          <%= form_tag admin_posts_path, method: :get, class: "navbar-form navbar-right" do %>
+            <%= text_field_tag :search, params[:search], placeholder: t(".search"),
+              class: "form-control" %>
+          <% end %>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

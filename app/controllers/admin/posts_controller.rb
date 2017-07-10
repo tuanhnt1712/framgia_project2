@@ -3,8 +3,8 @@ class Admin::PostsController < ApplicationController
   layout "admin"
 
   def index
-    @posts = Post.select(:id, :title, :content, :user_id, :updated_at, :picture)
-      .sort_by_updated.page(params[:page]).per Settings.post.page_post
+    @posts = Post.search(params[:search]).page(params[:page])
+      .per Settings.post.page_post
     respond_to do |format|
       format.html
       format.csv {send_data @posts.to_csv}

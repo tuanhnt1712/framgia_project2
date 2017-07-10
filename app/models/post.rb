@@ -12,8 +12,10 @@ class Post < ApplicationRecord
   mount_uploader :picture, PictureUploader
 
   scope :sort_by_updated, ->{order updated_at: :desc}
-  scope :feed_load, lambda{|x,y|
+  scope :feed_load, lambda{|x, y|
     where("user_id IN (?) OR user_id = ?", x, y)}
+  scope :search, lambda{|search|
+    where("title LIKE ? OR content LIKE ?", "%#{search}%", "%#{search}%")}
 
   def list_tags= names
     self.tags = names.split(",").map do |name|
