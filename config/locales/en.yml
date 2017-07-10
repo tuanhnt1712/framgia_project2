@@ -138,6 +138,7 @@ en:
       post: Post
     header_admin:
       account: "Account"
+      search: "Search"
     menu_admin:
       dashboard: "Dashboard"
       framgia_project2: "Framgia Project2"

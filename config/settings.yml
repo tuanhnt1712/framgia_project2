@@ -4,6 +4,7 @@ user:
   minimum_password: 6
   page_user: 10
 post:
+  date: "%B %d, %Y"
   maximum_title: 255
   page_post: 10
   picture_default: "post.jpg"

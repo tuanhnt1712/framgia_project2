@@ -4,8 +4,7 @@
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="post-heading word-break">
           <h2><%= @post.title %></h2>
-          <span class="meta"><%= t ".post_by" %> <%= link_to @post.user.name, @post.user %>
-            <%= t ".on" %> <%= @post.created_at %></span>
+          <span class="meta"><%= @post.updated_at.strftime(Settings.post.date) %></span>
           <% if @post.tags.any? %>
             <span>
               <i class="fa fa-tags"></i><%= t ".tags" %>:
