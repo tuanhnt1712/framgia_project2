@@ -11,7 +11,12 @@
       <ul class="nav navbar-nav navbar-left">
         <li><%= link_to t(".users"), users_path %></li>
         <li><%= link_to t(".posts"), posts_path %></li>
-        <li><%= link_to t(".tags"), "#" %></li>
+        <li>
+          <%= form_tag posts_path, method: :get, class: "navbar-form navbar-right" do %>
+            <%= text_field_tag :q, params[:q], placeholder: t(".search"),
+              class: "form-control" %>
+          <% end %>
+        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to t(".home"), root_path %></li>

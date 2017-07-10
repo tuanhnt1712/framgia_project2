@@ -5,6 +5,11 @@ class Admin::UsersController < ApplicationController
   def index
     @users = User.select(:id, :name, :email, :avatar, :phone).sort_by_id
       .page(params[:page]).per Settings.user.page_user
+    respond_to do |format|
+      format.html
+      format.csv {send_data @users.to_csv}
+      format.xls {send_data @users.to_csv(col_sep: "\t")}
+    end
   end
 
   def destroy

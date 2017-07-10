@@ -6,10 +6,25 @@ en:
         failed_delete: "Delete failed"
       index:
         action: "Action"
+        csv: "CSV"
+        download: "Download"
         email: "Email"
-        phone: "Phone"
+        excel: "Excel"
+        posts: "Posts"
         user: "User"
       user:
+        delete: "Delete"
+        sure: "Are you sure?"
+    posts:
+      destroy:
+        deleted_user: "Delete successfully"
+        failed_delete: "Delete failed"
+      index:
+        csv: "CSV"
+        download: "Download"
+        excel: "Excel"
+        posts: "Posts"
+      post:
         delete: "Delete"
         sure: "Are you sure?"
   comments:
@@ -73,6 +88,7 @@ en:
       menu: "Menu"
       posts: "Posts"
       profile: "Profile"
+      search: "Search"
       settings: "Settings"
       signup: "Sign up"
       tags: "Tags"

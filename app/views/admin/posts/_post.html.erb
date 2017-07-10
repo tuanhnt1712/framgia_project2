@@ -1,0 +1,25 @@
+<div id="post-<%= post.id %>">
+  <div div="box-post">
+    <%= link_to image_tag(post.user.avatar, class: "avatar-post") %>
+    <h3 class="user-name"><%= link_to post.user.name %></h3>
+    <h2 class="post-title"><%= link_to post.title %>
+      <% if post.tags.any? %>
+        <span class="badge badge-info">
+          <% post.tags.each do |tag| %>
+            <%= link_to tag.name %>,
+          <% end %>
+        </span>
+      <% end %>
+    </h2>
+    <p class="post-meta"><%= t ".post_by" %> <%= post.user.name %>
+      <%= t ".on_at" %> <%= post.updated_at %>
+    </p>
+    <span>
+      <% if can? :destroy, post %>
+        <%= link_to t(".delete"), admin_post_path(post), method: :delete, remote: true,
+         data: {confirm: t(".sure")}, class: "btn btn-danger button_text" %>
+      <% end %>
+    </span>
+    <hr>
+  </div>
+</div>
