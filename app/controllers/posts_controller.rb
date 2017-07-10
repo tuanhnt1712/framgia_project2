@@ -4,8 +4,8 @@ class PostsController < ApplicationController
   load_and_authorize_resource except: [:index, :show]
 
   def index
-    @posts = Post.search(params[:search]).page(params[:page])
-      .per Settings.post.page_post
+    @posts = Post.search(params[:search]).sort_by_updated
+      .page(params[:page]).per Settings.post.page_post
     respond_to do |format|
       format.html
       format.js

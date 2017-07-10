@@ -28,10 +28,10 @@
         <span class="word-break"><%= raw @post.content %></span>
         <span>
           <% if can? :update, @post %>
-            <%= link_to t(".edit"), edit_post_path(@post),
-              class: "btn btn-primary button_text" %>
+            <%= link_to t(".edit_post"), edit_post_path(@post),
+              class: "btn btn-primary button_text profile" %>
             <%= link_to t(".delete"), @post, method: :delete,
-              data: {confirm: t(".sure")}, class: "btn btn-danger button_text" %>
+              data: {confirm: t(".sure")}, class: "btn btn-danger button_text profile" %>
           <% end %>
         </span>
         <hr>
@@ -55,8 +55,8 @@
         </div>
         <div class="user-info-row">
           <% if current_user == @post.user %>
-            <%= link_to t(".edit"), edit_user_registration_path(@post.user),
-              class: "btn btn-primary button_text" %>
+            <%= link_to t(".edit_profile"), edit_user_registration_path(@post.user),
+              class: "btn btn-primary button_text profile" %>
           <% end %>
         </div>
         <div class="sidebar">
