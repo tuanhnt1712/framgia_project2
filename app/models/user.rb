@@ -18,14 +18,14 @@ class User < ApplicationRecord
 
   mount_uploader :avatar, AvatarUploader
 
-  scope :sort_by_id, ->{order :id}
+  scope :sort_by_name, ->{order :name}
 
   class << self
     def from_omniauth auth
       where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
         user.name = auth.info.name
         user.email = auth.info.email
-        user.password = Devise.friendly_token[0, 20]
+        user.password = "123456"
       end
     end
 

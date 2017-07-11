@@ -41,23 +41,30 @@ body {
 }
 
 .banner-home {
-  background-image: url('/assets/banner.jpg');
+  background-image: image-url('/assets/banner.jpg');
 }
 
 .banner-contact {
-  background-image: url('/assets/contact.jpg');
+  background-image: image-url('/assets/contact.jpg');
 }
 
 .banner-posts {
-  background-image: url('/assets/posts.jpg');
+  background-image: image-url('/assets/posts.jpg');
 }
 
 .post {
   color: $black;
 }
 
+.image-post {
+  img {
+    height: auto;
+    width: 700px;
+  }
+}
+
 .yield {
-  background: url('/assets/back.jpg') no-repeat;
+  background: image-url('/assets/back.jpg') no-repeat;
   background-size: cover;
   padding-top: 60px;
   color: $white;

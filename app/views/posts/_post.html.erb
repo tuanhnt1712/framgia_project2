@@ -11,6 +11,9 @@
         </span>
       <% end %>
     </h2>
+    <div class="image-post">
+      <%= image_tag post.picture.url if post.picture? %>
+    </div>
     <p class="post-meta"><%= post.updated_at.strftime(Settings.post.date) %></p>
     <span class="glyphicon glyphicon-comment"></span><%= post.comments.size %>
     <span>

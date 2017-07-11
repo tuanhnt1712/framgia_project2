@@ -3,7 +3,7 @@ class Admin::UsersController < ApplicationController
   layout "admin"
 
   def index
-    @users = User.select(:id, :name, :email, :avatar, :phone).sort_by_id
+    @users = User.select(:id, :name, :email, :avatar, :phone).sort_by_name
       .page(params[:page]).per Settings.user.page_user
     respond_to do |format|
       format.html
