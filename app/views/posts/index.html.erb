@@ -5,7 +5,7 @@
         <div class="site-heading">
           <h1><%= t ".your_life" %></h1>
           <% if user_signed_in? %>
-            <%= link_to "create_post", new_post_path,
+            <%= link_to t(".create_post"), new_post_path,
               class: "create-post btn btn-sm btn-primary" %>
           <% end %>
           <span class="subheading"><%= t ".quote" %></span>

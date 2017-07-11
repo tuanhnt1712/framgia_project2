@@ -88,7 +88,7 @@ en:
       menu: "Menu"
       posts: "Posts"
       profile: "Profile"
-      search: "Search"
+      search: "Search post"
       settings: "Settings"
       signup: "Sign up"
       tags: "Tags"
@@ -109,6 +109,7 @@ en:
       picture: "Picture"
       tags: "Tags"
     index:
+      create_post: "Create Post"
       your_life: "Your life your choice"
       quote: "Let us tenderly and kindly cherish, therefore, the means of knowledge. Let us dare to read, think, speak, and write."
     new:
@@ -122,7 +123,8 @@ en:
     show:
       comment: "Comment"
       delete: "Delete"
-      edit: "Edit"
+      edit_post: "Edit post"
+      edit_profile: "Edit profile"
       followers: "Followers"
       following: "Following"
       on_at: "on at"
@@ -138,7 +140,7 @@ en:
       post: Post
     header_admin:
       account: "Account"
-      search: "Search"
+      search: "Search post"
     menu_admin:
       dashboard: "Dashboard"
       framgia_project2: "Framgia Project2"
@@ -151,6 +153,7 @@ en:
       contact_me: "Contact me"
       quote: "Have questions? I have answers (maybe)."
     home:
+      create_post: "Create Post"
       quote: "One great use of words is to hide our thoughts."
       your_secret: "Your Secret"
   users:
@@ -170,7 +173,7 @@ en:
     followers:
       followers: "Followers"
     profile:
-      edit: "Edit"
+      edit: "Edit profile"
       followers: "Followers"
       following: "Following"
     show_follow:

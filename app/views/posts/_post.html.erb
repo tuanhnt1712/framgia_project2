@@ -11,16 +11,17 @@
         </span>
       <% end %>
     </h2>
-    <p class="post-meta"><%= post.updated_at.strftime("%B %d, %Y") %>
-      <span class="glyphicon glyphicon-comment"></span><%= post.comments.size %>
-    </p>
-    <%= social_share_button_tag post.title, url: request.original_url %>
+    <p class="post-meta"><%= post.updated_at.strftime(Settings.post.date) %></p>
+    <span class="glyphicon glyphicon-comment"></span><%= post.comments.size %>
     <span>
       <% if can? :update, post %>
-        <%= link_to t(".edit"), edit_post_path(post),
-          class: "btn btn-primary button_text" %>
-        <%= link_to t(".delete"), post, method: :delete, remote: true,
-          data: {confirm: t(".sure")}, class: "btn btn-danger button_text" %>
+        <%= link_to edit_post_path(post) do %>
+         <span class="glyphicon glyphicon-pencil"></span>
+        <% end %>
+        <%= link_to post, method: :delete, remote: true,
+          data: {confirm: t(".sure")} do %>
+          <span class="glyphicon glyphicon-remove"></span>
+        <% end %>
       <% end %>
     </span>
     <hr>
